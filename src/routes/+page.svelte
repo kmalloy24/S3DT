@@ -1,3 +1,7 @@
+<script lang="ts">
+	export let data;
+</script>
+
 <div class="container h-full mx-auto flex justify-center items-center">
 	<div class="space-y-10 text-center flex flex-col items-center">
 		<h1 class="flex gap-x-2">
@@ -13,41 +17,25 @@
 			<p class="h1 font-semibold">DataTable</p>
 		</h1>
 
+		<!-- Responsive Container (recommended) -->
 		<div class="table-container">
+			<!-- Native Table Element -->
 			<table class="table table-hover">
-				<thead class="text-primary-500">
+				<thead>
 					<tr>
-						<th>Position</th>
 						<th>Name</th>
-						<th>Symbol</th>
-						<th>Weight</th>
+						<th>Type 1</th>
+						<th>Type 2</th>
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<td>1</td>
-						<td>1</td>
-						<td>1</td>
-						<td>1</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>1</td>
-						<td>1</td>
-						<td>1</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>1</td>
-						<td>1</td>
-						<td>1</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>1</td>
-						<td>1</td>
-						<td>1</td>
-					</tr>
+					{#each data.pokemon as pokemon}
+						<tr>
+							<td>{pokemon.Name}</td>
+							<td>{pokemon.Name}</td>
+							<td>{pokemon.Name}</td>
+						</tr>
+					{/each}
 				</tbody>
 			</table>
 		</div>
