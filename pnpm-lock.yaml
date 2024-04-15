@@ -31,6 +31,9 @@ devDependencies:
   '@types/node':
     specifier: 20.12.7
     version: 20.12.7
+  '@vincjo/datatables':
+    specifier: ^1.14.5
+    version: 1.14.5(svelte@4.2.7)
   autoprefixer:
     specifier: 10.4.19
     version: 10.4.19(postcss@8.4.38)
@@ -664,6 +667,14 @@ packages:
     dependencies:
       '@types/node': 20.12.7
     dev: false
+
+  /@vincjo/datatables@1.14.5(svelte@4.2.7):
+    resolution: {integrity: sha512-kvjr8ggRTRzwDTgOqK3bQPe5ZJo68h30SHcx0WS3daLVt/IUzN2132wtH2JZQkpxyjmh9EiblugOzUv/36Xpug==}
+    peerDependencies:
+      svelte: '>=3.54.0'
+    dependencies:
+      svelte: 4.2.7
+    dev: true
 
   /acorn@8.11.3:
     resolution: {integrity: sha512-Y9rRfJG5jcKOE0CLisYbojUjIrIEE7AGMzA/Sm4BslANhbS+cDMpgBdcPT91oJ7OuJ9hYJBx59RjbhxVnrF8Xg==}
