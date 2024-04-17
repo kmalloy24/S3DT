@@ -1,9 +1,11 @@
-// See https://kit.svelte.dev/docs/types#app
-// for information about these interfaces
-// and what to do when importing types
+import type { SupabaseClient } from "@supabase/supabase-js";
+import type { Database } from "$lib/supabase-types.ts";
+
 declare namespace App {
-	// interface Locals {}
-	// interface PageData {}
-	// interface Error {}
-	// interface Platform {}
+  interface Locals {
+    supabase: SupabaseClient<Database>;
+  }
+  // interface PageData {}
+  // interface Error {}
+  // interface Platform {}
 }
